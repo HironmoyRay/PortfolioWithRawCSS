@@ -9,24 +9,24 @@
 body {
   background-image: linear-gradient(306deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%), linear-gradient(353deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%), linear-gradient(140deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%), linear-gradient(189deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%), linear-gradient(90deg, rgb(9, 201, 186), rgb(18, 131, 221));
   color: #ebf4f6;
-}
-
-.section {
-  padding-top: 1rem;
-  height: 100vh;
-}
-.section h1 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-.header {
   position: relative;
 }
 
+.section {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding-top: 30rem;
+  }
+}
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 1000;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,7 +83,13 @@ body {
   border: 0.25rem solid #37b7c3;
 }
 
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 992px) {
+  .navbar__list {
+    margin: 0;
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
     gap: 0;
@@ -115,7 +121,7 @@ body {
   font-size: 5rem;
   text-align: center;
   color: #071952;
-  margin: 0 6rem 1rem;
+  margin: 0 6rem 1rem 6rem;
   border-bottom: 0.5rem solid #088395;
   border-radius: 2rem;
 }
@@ -139,5 +145,14 @@ body {
   width: 100%;
   max-height: 60rem;
   border-radius: 20px;
-  border: 8px solid #071952;
+  border: 1rem solid #071952;
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero__left {
+    margin-bottom: 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */

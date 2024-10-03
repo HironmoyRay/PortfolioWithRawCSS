@@ -111,22 +111,25 @@ $bg-button: (
 body {
   background-image: $bg-button;
   color: $light-color;
-}
-.section {
-  padding-top: 1rem;
-  height: 100vh;
-  h1 {
-    font-size: 4rem;
-    text-align: center;
-  }
-}
-.header {
   position: relative;
 }
+.section {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  // position: relative;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    padding-top: 30rem;
+  }
+}
+
 // ~ Navbar ~
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 1000;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -184,7 +187,15 @@ body {
   }
 }
 // ~ Navbar ~  Responsive ~
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 992px) {
+  .navbar {
+    &__list {
+      margin: 0;
+      padding: 0 1rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
     gap: 0;
@@ -216,7 +227,7 @@ body {
       font-size: 5rem;
       text-align: center;
       color: $dark-color;
-      margin: 0 6rem 1rem;
+      margin: 0 6rem 1rem 6rem;
       border-bottom: 0.5rem solid $secondary-color;
       border-radius: 2rem;
     }
@@ -242,6 +253,16 @@ body {
 
     max-height: 60rem;
     border-radius: 20px;
-    border: 8px solid $dark-color;
+    border: 1rem solid $dark-color;
+  }
+}
+
+// Responsive Hero
+@media screen and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    &__left {
+      margin-bottom: 4rem;
+    }
   }
 }
