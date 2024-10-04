@@ -10,11 +10,15 @@ body {
   background-image: linear-gradient(306deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%), linear-gradient(353deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%), linear-gradient(140deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%), linear-gradient(189deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%), linear-gradient(90deg, rgb(9, 201, 186), rgb(18, 131, 221));
   color: #ebf4f6;
   position: relative;
+  width: 100%;
+  min-width: 460px;
 }
 
 .section {
   padding-top: 10rem;
   padding-bottom: 2rem;
+  width: 100%;
+  min-width: 460px;
 }
 
 @media screen and (max-width: 768px) {
@@ -68,7 +72,7 @@ body {
 .navbar__link:hover {
   border-bottom: 0.25rem solid white;
 }
-.navbar__login .btn {
+.navbar__blogs .blogs--link {
   transition: all 0.3s ease-in-out;
   color: #ebf4f6;
   background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%, rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%), linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%, rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%), linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%, rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%), linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%, rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%), linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%, rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%), linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%, rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%), linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%, rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%), linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%, rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%), linear-gradient(90deg, rgb(10, 17, 72), rgb(35, 148, 228));
@@ -78,8 +82,9 @@ body {
   border-radius: 2rem;
   font-size: 2rem;
   font-weight: 700;
+  text-decoration: none;
 }
-.navbar__login .btn:hover {
+.navbar__blogs .blogs--link:hover {
   border: 0.25rem solid #37b7c3;
 }
 
@@ -102,10 +107,10 @@ body {
     margin: 1rem 0 0 0;
     padding: 0.25rem 0;
   }
-  .navbar__login {
-    margin: 1rem 0 2rem;
+  .navbar__blogs {
+    margin: 2rem 0 2rem;
   }
-  .navbar__login .btn {
+  .navbar__blogs .blocks--link {
     padding: 0.25rem 2rem;
   }
 }
@@ -115,6 +120,7 @@ body {
 }
 .hero__left {
   flex: 50%;
+  width: 100%;
   padding: 0 6rem;
 }
 .hero__left--title {
@@ -127,12 +133,12 @@ body {
 }
 .hero__left--subtitle {
   font-size: 2.5rem;
-  font-weight: 600;
   text-align: justify;
   color: #071952;
 }
 .hero__right {
   flex: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 0 6rem;
@@ -155,4 +161,126 @@ body {
   .hero__left {
     margin-bottom: 4rem;
   }
+}
+.about {
+  padding: 10rem 6rem;
+  color: #071952;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 30rem;
+  }
+}
+.subheader__container {
+  display: flex;
+}
+
+.header {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.subheader {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.line {
+  width: 10rem;
+  height: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: #088395;
+}
+
+.sub-line {
+  width: 6rem;
+  height: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: #088395;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.details {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.info,
+.skills,
+.education,
+.experience {
+  flex: 50%;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+.items h5 {
+  font-size: 1.75rem;
+}
+.items p {
+  font-size: 1.75rem;
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+.items input {
+  margin-left: 2rem;
+  flex-grow: 1;
+  max-width: 30rem;
+}
+
+@media screen and (max-width: 992px) {
+  .subheader__container {
+    flex-direction: column;
+  }
+  .info,
+  .skills,
+  .education,
+  .experience {
+    flex: 100%;
+  }
+}
+.edu-items,
+.exp-items {
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+.edu-items h5,
+.exp-items h5 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.edu-items h6,
+.edu-items small,
+.exp-items h6,
+.exp-items small {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.hr {
+  width: 100%;
+  min-width: 100px;
+  max-width: 200px;
+  border-radius: 10px;
+  height: 0.25rem;
+  margin-top: 10px;
+  margin-left: 2rem;
+  background-color: #37b7c3;
 }/*# sourceMappingURL=style.css.map */

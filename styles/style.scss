@@ -108,21 +108,27 @@ $bg-button: (
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
 body {
   background-image: $bg-button;
   color: $light-color;
   position: relative;
+  width: 100%;
+  min-width: 460px;
 }
+
 .section {
   padding-top: 10rem;
   padding-bottom: 2rem;
-  // position: relative;
+  width: 100%;
+  min-width: 460px;
 }
 @media screen and (max-width: 768px) {
   .section {
     padding-top: 30rem;
   }
 }
+//**********************************//
 
 // ~ Navbar ~
 .navbar {
@@ -169,9 +175,10 @@ body {
       border-bottom: 0.25rem solid white;
     }
   }
-  &__login {
-    .btn {
+  &__blogs {
+    .blogs--link {
       transition: all 0.3s ease-in-out;
+      // display: block;
       color: $light-color;
       background-image: $bg-color;
       border: 0.25rem solid $light-color;
@@ -180,6 +187,7 @@ body {
       border-radius: 2rem;
       font-size: 2rem;
       font-weight: 700;
+      text-decoration: none;
       &:hover {
         border: 0.25rem solid $primary-color;
       }
@@ -207,25 +215,29 @@ body {
       margin: 1rem 0 0 0;
       padding: 0.25rem 0;
     }
-    &__login {
-      margin: 1rem 0 2rem;
-      .btn {
+    &__blogs {
+      margin: 2rem 0 2rem;
+      .blocks--link {
         padding: 0.25rem 2rem;
       }
     }
   }
 }
+//************************************//
 
 // ~ Hero Container ~
 .hero {
   display: flex;
   align-items: center;
+
   &__left {
     flex: 50%;
+    width: 100%;
     padding: 0 6rem;
     &--title {
       font-size: 5rem;
       text-align: center;
+      // text-wrap: nowrap;
       color: $dark-color;
       margin: 0 6rem 1rem 6rem;
       border-bottom: 0.5rem solid $secondary-color;
@@ -233,13 +245,14 @@ body {
     }
     &--subtitle {
       font-size: 2.5rem;
-      font-weight: 600;
+      // font-weight: 600;
       text-align: justify;
       color: $dark-color;
     }
   }
   &__right {
     flex: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 0 6rem;
@@ -256,7 +269,6 @@ body {
     border: 1rem solid $dark-color;
   }
 }
-
 // Responsive Hero
 @media screen and (max-width: 992px) {
   .hero {
@@ -265,4 +277,127 @@ body {
       margin-bottom: 4rem;
     }
   }
+}
+//***********************************//
+
+// About section
+.about {
+  padding: 10rem 6rem;
+  color: $dark-color;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 30rem;
+  }
+}
+.subheader__container {
+  display: flex;
+}
+.header {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.subheader {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.line {
+  width: 10rem;
+  height: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: $secondary-color;
+}
+.sub-line {
+  width: 6rem;
+  height: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: $secondary-color;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.details {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.info,
+.skills,
+.education,
+.experience {
+  flex: 50%;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: 2rem;
+
+  h5 {
+    font-size: 1.75rem;
+    // color: $light-color;
+  }
+  p {
+    font-size: 1.75rem;
+    flex-grow: 1;
+    margin-left: 1rem;
+    // color: $secondary-color;
+  }
+  input {
+    margin-left: 2rem;
+    flex-grow: 1;
+    max-width: 30rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .subheader__container {
+    flex-direction: column;
+  }
+  .info,
+  .skills,
+  .education,
+  .experience {
+    flex: 100%;
+  }
+}
+
+.edu-items,
+.exp-items {
+  padding: 0 2rem;
+  margin-top: 2rem;
+  // border-bottom: 2px solid red;
+  h5 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  h6,
+  small {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+.hr {
+  width: 100%;
+  min-width: 100px;
+  max-width: 200px;
+  border-radius: 10px;
+  height: 0.25rem;
+  margin-top: 10px;
+  margin-left: 2rem;
+  background-color: $primary-color;
+}
+
+@media screen and (max-width: 768px) {
 }
