@@ -454,3 +454,95 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+// Contact Section
+.contact {
+  padding: 10rem 6rem 6rem 6rem;
+  color: $dark-color;
+  h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  p {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    border: 0.25rem solid $secondary-color;
+    border-radius: 1.5rem;
+    outline: none;
+  }
+  form {
+    padding: 2rem;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+  .btn {
+    transition: all 0.3s ease-in-out;
+    // display: block;
+    color: $light-color;
+    background-image: $bg-color;
+    border: 0.25rem solid $secondary-color;
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover {
+      border: 0.25rem solid $primary-color;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding-top: 30rem;
+    form {
+      div {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+  }
+}
+
+// footer
+// .footer {
+//   width: 100%;
+//   height: 8rem;
+//   background-color: $dark-color;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   div {
+//     font-size: 3rem;
+//     font-weight: 700;
+//     color: $secondary-color;
+//   }
+//   i {
+//     font-size: 1.5rem;
+//     border: 0.24rem solid $light-color;
+//     border-radius: 50%;
+//     color: $light-color;
+//     padding: 0.5rem;
+//     margin: 1rem;
+//   }
+//   p {
+//     font-size: 1.5rem;
+//   }
+// }

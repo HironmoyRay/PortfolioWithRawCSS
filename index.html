@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -23,7 +30,7 @@
           <a href="#portfolio" class="navbar__link">Portfolio</a>
         </li>
         <li class="navbar__list">
-          <a href="#" class="navbar__link">Contact</a>
+          <a href="#contact" class="navbar__link">Contact</a>
         </li>
       </ul>
       <div class="navbar__blogs">
@@ -286,5 +293,42 @@
         </div>
       </div>
     </div>
+    <div class="section contact" id="contact">
+      <div class="header__container">
+        <h2 class="header">Contact Me</h2>
+        <div class="line"></div>
+        <div class="sub-line"></div>
+      </div>
+      <h4>Do you Have any Question?</h4>
+      <p>I am at your Services</p>
+      <form>
+        <div>
+          <input type="text" name="name" id="name" placeholder="name" />
+          <input type="email" name="email" id="email" placeholder="email" />
+        </div>
+        <input type="text" name="sub" id="sub" placeholder="subject" />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="message"
+          rows="10"
+        ></textarea>
+      </form>
+      <button class="btn">Send Message</button>
+    </div>
+    <!-- <footer class="footer">
+      <div>
+        <i class="fa-solid fa-envelope"></i>
+        |
+        <i class="fa-solid fa-phone"></i>
+        |
+        <i class="fa-brands fa-facebook"></i>
+        |
+        <i class="fa-brands fa-linkedin"></i>
+        |
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <p>&copy 2024 Hironmoy Ray. All rights Reserved.</p>
+    </footer> -->
   </body>
 </html>

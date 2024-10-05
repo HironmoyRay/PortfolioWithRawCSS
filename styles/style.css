@@ -338,4 +338,62 @@ body {
   .grid__layout {
     grid-template-columns: 1fr;
   }
+}
+.contact {
+  padding: 10rem 6rem 6rem 6rem;
+  color: #071952;
+}
+.contact h4 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.contact p {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.contact input,
+.contact textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+  border: 0.25rem solid #088395;
+  border-radius: 1.5rem;
+  outline: none;
+}
+.contact form {
+  padding: 2rem;
+}
+.contact form div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.contact .btn {
+  transition: all 0.3s ease-in-out;
+  color: #ebf4f6;
+  background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%, rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%), linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%, rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%), linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%, rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%), linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%, rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%), linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%, rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%), linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%, rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%), linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%, rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%), linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%, rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%), linear-gradient(90deg, rgb(10, 17, 72), rgb(35, 148, 228));
+  border: 0.25rem solid #088395;
+  padding: 1rem 2rem;
+  margin: 0 2rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.contact .btn:hover {
+  border: 0.25rem solid #37b7c3;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding-top: 30rem;
+  }
+  .contact form div {
+    flex-direction: column;
+    gap: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
