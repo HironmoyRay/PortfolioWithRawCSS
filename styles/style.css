@@ -278,12 +278,11 @@ body {
 .hr {
   width: 100%;
   min-width: 100px;
-  max-width: 200px;
-  border-radius: 10px;
+  max-width: 300px;
+  border-radius: 50%;
   height: 0.25rem;
   margin-top: 10px;
-  margin-left: 2rem;
-  background-color: #37b7c3;
+  background-color: #088395;
 }
 
 .portfolio {
