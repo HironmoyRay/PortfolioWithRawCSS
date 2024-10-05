@@ -110,7 +110,8 @@ $bg-button: (
 }
 
 body {
-  background-image: $bg-button;
+  // background-image: $bg-button;
+  background-color: $light-color;
   color: $light-color;
   position: relative;
   width: 100%;
@@ -140,7 +141,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  border-bottom: 0.25rem solid $light-color;
+  border-bottom: 0.5rem solid $light-color;
   background-image: $bg-color;
   opacity: 0.9;
   backdrop-filter: blur(5px);
@@ -282,7 +283,7 @@ body {
 
 // About section
 .about {
-  padding: 10rem 6rem;
+  padding: 10rem 6rem 0 6rem;
   color: $dark-color;
 }
 @media screen and (max-width: 768px) {
@@ -290,12 +291,14 @@ body {
     padding-top: 30rem;
   }
 }
+
 .subheader__container {
   display: flex;
 }
 .header {
   font-size: 4rem;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 .subheader {
   font-size: 2.5rem;
@@ -399,5 +402,55 @@ body {
   background-color: $primary-color;
 }
 
+// Portfolio
+.portfolio {
+  padding: 10rem 6rem 0 6rem;
+  color: $dark-color;
+}
+.grid__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.grid--box {
+  margin: 2rem;
+  border-left: 0.75rem solid $secondary-color;
+  border-right: 0.75rem solid $secondary-color;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  &:hover {
+    border-left: 0.75rem solid $primary-color;
+    border-right: 0.75rem solid $primary-color;
+  }
+  .grid--links {
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    color: $dark-color;
+    border: 0.15rem solid $secondary-color;
+    border-radius: 1rem;
+    // margin: 0 1rem;
+    padding: 0.25rem 01rem;
+    &:hover {
+      background-image: $bg-button;
+      color: $light-color;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .grid__layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media screen and (max-width: 768px) {
+  .portfolio {
+    padding-top: 30rem;
+  }
+  .grid__layout {
+    grid-template-columns: 1fr;
+  }
 }
